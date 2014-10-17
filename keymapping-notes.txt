@@ -29,7 +29,7 @@
 00	00	00	00	04	00	27
 0B	00	00	00	04	00	28
 0A	00	00	00	04	00	29	; clear
-1D	00	00	00	04	00	E1	; trying to map the "*" remote to Left Shift Keyboard
+1D	00	00	00	04	00	E1	; DOES NOT WORK trying to map the "*" remote to Left Shift Keyboard
 1C	00	00	00	04	02	20	; Shift+3# produce #
 1F	00	00	00	04	00	51
 1E	00	00	00	04	00	52	; "up arrow"

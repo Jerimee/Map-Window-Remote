@@ -17,7 +17,7 @@
 1E	00	00	00	04	00	52	; "up arrow"
 21
 20
-22	00	00	00	04	00	1E	; OK button on remote map to 1!
+22	00	00	00	04	00	E3	; OK button on remote map to left windows key (Left GUI keyboard key)
 4E
 0F	00	00	00	01	21	02	; Info button on remote, changed from 0209 (unknown) to 0221 (VK_BROWSER_SEARCH)
 23	00 	00 	00 	01 	24 	02 	; back
@@ -41,3 +41,5 @@
 29
 2A
 0D	00	00	00	04	00	E3	; DID NOT WORK try to map green windows remote button to left windows key (Left GUI keyboard key)
+5B	00	00	00	04	00	2B 	; red button on remote map to TAB
+5C	00	00	00	04	27	02	; green button to VK_BROWSER_REFRESH

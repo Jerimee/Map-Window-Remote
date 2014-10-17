@@ -20,7 +20,7 @@
 22	00	00	00	04	00	1E	; OK button on remote map to 1!
 4E
 0F	00	00	00	01	21	02	; Info button on remote, changed from 0209 (unknown) to 0221 (VK_BROWSER_SEARCH)
-23
+23	00 	00 	00 	01 	24 	02 	; back
 3B
 16
 18

@@ -1,7 +1,7 @@
 Map-Window-Remote
 =================
 
-Notes on modifying the Windows 8 Registry File '''ReportMapping Table''' to improve remote control input.
+Notes on modifying the Windows 8 Registry File *ReportMapping Table* to improve remote control input.
 
 <pre>
 HKEY_LOCAL_MACHINE

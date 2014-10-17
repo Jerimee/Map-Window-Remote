@@ -1,3 +1,16 @@
+;;;;;;;;;;;;;;;;;;;;;;;
+; 	http://kodi.wiki/?title=Using_a_Microsoft_remote_control_in_Windows
+;	0: remote control button
+;	1: 00 (ignore)
+;	2: 00 (ignore)
+;	3: 00 (ignore)
+;	4: mode (1 is multimedia command, 4 is as if keyboard, 3 is raw input)
+;	5: low byte or key mod
+;	6: high byte or key mod
+;
+; 	if the fourth parameter is confusing, just leave it as "04"
+;
+;;;;;;;;;;;;;;;;;;;;;;;;
 0	1	2	3	4	5	6
 01 	00 	00 	00 	04	00	1E
 02	00	00	00	04	00	1F 
@@ -11,17 +24,17 @@
 00	00	00	00	04	00	27
 0B	00	00	00	04	00	28
 0A	00	00	00	04	00	29	; clear
-1D	00	00	00	04	02	25	; Shift+8*
-1C	00	00	00	04	02	20
+1D	00	00	00	04	00	E1	; trying to map the "*" remote to Left Shift Keyboard
+1C	00	00	00	04	02	20	; Shift+3# produce #
 1F
 1E	00	00	00	04	00	52	; "up arrow"
 21
 20
-22	00	00	00	04	00	E3	; OK button on remote map to left windows key (Left GUI keyboard key)
-4E
+22	00	00	00	04	00	28	; OK button to return																		
+4E	00	00	00	01	08	02	; 0208 Multimedia unknown, print remote button not on my remote anyway
 0F	00	00	00	01	21	02	; Info button on remote, changed from 0209 (unknown) to 0221 (VK_BROWSER_SEARCH)
 23	00 	00 	00 	01 	24 	02 	; back
-3B
+3B	00	00	00	01	04	02	; 0204 Multimedia unknown, Close App button unknown
 16
 18
 17
@@ -40,6 +53,7 @@
 0C
 29
 2A
-0D	00	00	00	04	00	E3	; DID NOT WORK try to map green windows remote button to left windows key (Left GUI keyboard key)
-5B	00	00	00	04	00	2B 	; red button on remote map to TAB
-5C	00	00	00	04	27	02	; green button to VK_BROWSER_REFRESH
+0D	00	00	00	04	00	2B	; try to map windows remote button to TAB					
+5B	00	00	00	04	08	07 	; red button to GUI+dD
+5C	00	00	00	01	94	01	; green button VK_LAUNCH_APP1
+5D	00	00	00	01	27	02	; yellow button to VK_BROWSER_REFRESH

@@ -1,4 +1,9 @@
 ;;;;;;;;;;;;;;;;;;;;;;;
+;
+;	HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57da
+;
+;;;;;;;;;;;;;;;;;;;;;;;
+;
 ; 	http://kodi.wiki/?title=Using_a_Microsoft_remote_control_in_Windows
 ;	0: remote control button
 ;	1: 00 (ignore)
@@ -26,17 +31,17 @@
 0A	00	00	00	04	00	29	; clear
 1D	00	00	00	04	00	E1	; trying to map the "*" remote to Left Shift Keyboard
 1C	00	00	00	04	02	20	; Shift+3# produce #
-1F
+1F	00	00	00	04	00	51
 1E	00	00	00	04	00	52	; "up arrow"
-21
-20
+21	00
+20	00
 22	00	00	00	04	00	28	; OK button to return																		
 4E	00	00	00	01	08	02	; 0208 Multimedia unknown, print remote button not on my remote anyway
 0F	00	00	00	01	21	02	; Info button on remote, changed from 0209 (unknown) to 0221 (VK_BROWSER_SEARCH)
 23	00 	00 	00 	01 	24 	02 	; back
 3B	00	00	00	01	04	02	; 0204 Multimedia unknown, Close App button unknown
-16
-18
+16	00	00	00	01	B0	00
+18	00	00	00	01	B1	00
 17
 14
 15

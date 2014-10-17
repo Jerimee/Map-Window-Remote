@@ -54,6 +54,7 @@
 29
 2A
 0D	00	00	00	04	00	2B	; try to map windows remote button to TAB					
-5B	00	00	00	04	08	07 	; red button to GUI+dD
-5C	00	00	00	01	94	01	; green button VK_LAUNCH_APP1
-5D	00	00	00	01	27	02	; yellow button to VK_BROWSER_REFRESH
+5B	00	00	00	04	08	07 	; red btn to GUI+dD
+5C	00	00	00	01	94	01	; green btn VK_LAUNCH_APP1
+5D	00	00	00	01	27	02	; yellow btn to VK_BROWSER_REFRESH
+5E	00	00	00	04	08	E7	; blue btn to GUI+GUI (in hopes of getting windows 8 screen)

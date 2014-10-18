@@ -29,7 +29,7 @@
 00	00	00	00	04	00	27
 0B	00	00	00	04	00	28
 0A	00	00	00	04	00	29	; clear
-1D	00	00	00	04	00	E1	; DOES NOT WORK trying to map the "*" remote to Left Shift Keyboard
+1D	00	00	00	04	00	76	; trying to map the "*" remote to "menu" key http://en.wikipedia.org/wiki/Menu_key
 1C	00	00	00	04	02	20	; Shift+3# produce #
 1F	00	00	00	04	00	51
 1E	00	00	00	04	00	52	; "up arrow"
@@ -53,13 +53,13 @@
 11	00	00	00	01	EA	00	; VK_VOLUME_DOWN
 0E	00	00	00	01	E2	00	; VK_VOLUME_MUTE
 26
-12
-13
+12	00	00	00	04	00	2B	; channel up is tab
+13  00	00	00	04	02	2B	; channel down is shift+tab
 0C
 29
 2A
-0D	00	00	00	04	00	2B	; try to map windows remote button to TAB					
+0D	00	00	00	04	08	E7	; map windows remote button to GUI+GUI (in hopes of getting windows 8 screen)				
 5B	00	00	00	04	08	07 	; red btn to GUI+dD
 5C	00	00	00	01	94	01	; green btn VK_LAUNCH_APP1
 5D	00	00	00	01	27	02	; yellow btn to VK_BROWSER_REFRESH
-5E	00	00	00	04	08	E7	; blue btn to GUI+GUI (in hopes of getting windows 8 screen)
+5E	00	00	00	04	08	06	; blue btn to gui+C
